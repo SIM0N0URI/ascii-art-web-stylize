@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCII Art Generator</title>
+  <link rel="stylesheet" href="/styles/styleIndex.css">
+  <link href="https://fonts.cdnfonts.com/css/ninja-naruto?styles=12396" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <img src="https://iili.io/K9cIxKx.png" alt="ASCII Art Generator Logo" class="logo">
+  </header>
+
+  <main class="container">
+    <form action="/ascii-art" method="POST">
+
+      <section class="input-box">
+        <textarea name="text" placeholder="Enter text here" required maxlength="1000"></textarea>
+      </section>
+
+      <section class="font-options">
+        <label>
+          <input type="radio" name="banner" value="standard" checked>
+          <img src="https://iili.io/FpTDUAB.png" alt="standard">
+          <span>standard</span>
+        </label>
+        <label>
+          <input type="radio" name="banner" value="shadow">
+          <img src="https://iili.io/FpTDUAB.png" alt="shadow">
+          <span>shadow</span>
+        </label>
+        <label>
+          <input type="radio" name="banner" value="thinkertoy">
+          <img src="https://iili.io/FpTDUAB.png" alt="thinkertoy">
+          <span>thinkertoy</span>
+        </label>
+      </section>
+
+      <button type="submit" class="generate-btn">GENERATE</button>
+    </form>
+
+    <section class="result-box">
+      <h2 class="result-title">RESULT:</h2>
+      <pre class="result-content">{{.}}</pre>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 ASCII Art Generator</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f6f6;
+    font-family: 'Ninja Naruto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: #212C3A;
+    text-shadow: 2px 2px 2px #917DAA;
+    margin: 0.2em 0;
+}
+
+p {
+    font-size: clamp(2rem, 4vw, 2rem);
+    color: #212C3A;
+    text-shadow: 2px 2px 2px #917DAA;
+    margin: 0 0 1.5em;
+    white-space: pre;
+}
+
+.character {
+    width: clamp(200px, 20vw, 500px);
+}
+
+a {
+    text-decoration: none;
+    font-size: clamp(1.8rem, 3.8vw, 1.8rem);
+    color: #212C3A;
+    text-shadow: 2px 2px 2px #917DAA;
+    margin: 1em;
+}
+
+a:hover {
+    color: #e54c1c;
+    transform: scale(1.05);
+
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+}
