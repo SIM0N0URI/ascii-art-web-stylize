@@ -10,7 +10,7 @@ It allows users to enter custom text, choose a banner style (`standard`, `shadow
 
 ### 1. Clone the repository  
 ```bash
-git clone https://learn.zone01oujda.ma/git/mohnouri/ascii-art-web-stylize.git
+git clone https://github.com/SIM0N0URI/ascii-art-web-stylize.git
 cd ascii-art-web-stylize
 ```
 ## 
